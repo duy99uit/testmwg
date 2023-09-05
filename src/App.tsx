@@ -1,8 +1,5 @@
-import { useMemo, useState } from "react";
-import "./App.css";
 import React from "react";
-import { removeVietnameseTones } from "./helper";
-import { fakeArr, loopArr } from "./fake";
+import "./App.css";
 
 const listData = [
   {

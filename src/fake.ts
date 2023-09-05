@@ -21,9 +21,9 @@ export const fakeArr = [
   },
 ];
 
-export const loopArr = (arr: Array<any>) => {
-  for (const obj of arr) {
-    console.log("loop", obj?.name);
-  }
-  return arr;
-};
+// export const loopArr = (arr: Array<any>) => {
+//   for (const obj of arr) {
+//     console.log("loop", obj?.name);
+//   }
+//   return arr;
+// };
