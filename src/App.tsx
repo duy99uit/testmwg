@@ -24,30 +24,30 @@ const listData = [
 ];
 
 function App() {
-  const [textInput, setTextInput] = useState("");
+  // const [textInput, setTextInput] = useState("");
 
-  const handleChangeVale = (
-    event: React.InputHTMLAttributes<HTMLInputElement>
-  ) => {
-    console.log("handleChangeVale", event.target.value);
-    setTextInput(event.target.value);
-  };
+  // const handleChangeVale = (
+  //   event: React.InputHTMLAttributes<HTMLInputElement>
+  // ) => {
+  //   console.log("handleChangeVale", event.target.value);
+  //   setTextInput(event.target.value);
+  // };
 
-  const renderListData = useMemo(() => {
-    if (textInput.trim().length === 0) return listData;
-    const _removeVietnameseTones =
-      removeVietnameseTones(textInput).toLocaleUpperCase();
+  // const renderListData = useMemo(() => {
+  //   if (textInput.trim().length === 0) return listData;
+  //   const _removeVietnameseTones =
+  //     removeVietnameseTones(textInput).toLocaleUpperCase();
 
-    return listData.filter((item) => {
-      return removeVietnameseTones(item?.name)
-        .toLocaleUpperCase()
-        .includes(_removeVietnameseTones);
-    });
-  }, [textInput]);
+  //   return listData.filter((item) => {
+  //     return removeVietnameseTones(item?.name)
+  //       .toLocaleUpperCase()
+  //       .includes(_removeVietnameseTones);
+  //   });
+  // }, [textInput]);
 
-  const data: any = useMemo(() => {
-    return loopArr(fakeArr);
-  }, []);
+  // const data: any = useMemo(() => {
+  //   return loopArr(fakeArr);
+  // }, []);
 
   return (
     <React.Fragment>
