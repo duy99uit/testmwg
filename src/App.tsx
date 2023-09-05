@@ -1,25 +1,6 @@
 import React from "react";
 import "./App.css";
 
-const listData = [
-  {
-    name: "Thế giới di động",
-    id: 1,
-  },
-  {
-    name: "Bách hoá xanh",
-    id: 2,
-  },
-  {
-    name: "Topzone",
-    id: 3,
-  },
-  {
-    name: "Điện máy xanh",
-    id: 4,
-  },
-];
-
 function App() {
   // const [textInput, setTextInput] = useState("");
 
